@@ -1,0 +1,122 @@
+/* Profile.css */
+*{
+  height: auto;
+  width: 100%;
+}
+body {
+
+    background: linear-gradient(to bottom, #2f4b2d, #4caf50); /* Darker green gradient background */
+    color: rgb(20, 17, 17); /* Default text color */
+  }
+  
+  .profile-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(108, 98, 98, 0.95); /* Slightly transparent white for contrast */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    animation: fadeIn 0.5s ease; /* Fade-in animation */
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 4px solid #50C878; /* Paris green border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s; /* Scale effect on hover */
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+  }
+  
+  .profile-name {
+    font-size: 2rem; /* Larger font size */
+    font-weight: bold;
+    color: #50C878; /* Paris green text */
+    text-align: center; /* Center the heading */
+    border: 2px solid #50C878; /* Paris green border */
+    padding: 5px; /* Padding around the text */
+    letter-spacing: 2px; /* Space between characters */
+    display: inline-block; /* Ensures the border wraps the text */
+    background: linear-gradient(to right, #75d67a 0%, #373333 50%, transparent 50%, transparent 100%); /* White background with transparency */
+    background-clip: text; /* Clips the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Hide the original text color */
+  }
+  
+  .profile-email {
+    font-size: 1rem; /* Smaller font size */
+    color: #e2e8f0; /* Light gray text color */
+  }
+  
+  .card {
+    border: none; /* Remove default card border */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .btn-primary {
+    background-color: #50C878; /* Paris green background */
+    border-color: #50C878; /* Match border color */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn-primary:hover {
+    background-color: #45b76e; /* Darker shade of Paris green on hover */
+    border-color: #45b76e; /* Match border color on hover */
+  }
+  
+  .form-label {
+    font-weight: bold; /* Bold labels for clarity */
+    color: #50C878; /* Paris green for labels */
+  }
+  
+  .form-control {
+    border-radius: 8px; /* Rounded input fields */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .form-control:focus {
+    border-color: #50C878; /* Paris green border on focus */
+    box-shadow: 0 0 5px rgba(80, 200, 120, 0.5); /* Paris green shadow on focus */
+  }
+  
+  .mt-4 {
+    margin-top: 2rem !important; /* Ensure consistent spacing */
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .profile-image {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .profile-name {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .profile-email {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  
+    .form-control {
+      font-size: 0.9rem; /* Adjust font size for form inputs on smaller screens */
+    }
+  }
